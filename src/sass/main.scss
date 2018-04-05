@@ -1,0 +1,25 @@
+@import "variables.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+@import "base.scss";
+
+@import "blocks/visually-hidden.scss";
+@import "blocks/btn.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/menu-sandwich.scss";
+@import "blocks/block-feedback.scss";
+@import "blocks/slider.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product.scss";
+@import "blocks/product-popup-content.scss";
+@import "blocks/order.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-links.scss";
+@import "blocks/popup-callback.scss";
+@import "blocks/popup-callback-thank.scss";
+@import "blocks/product-popup-content-thank.scss";
+@import "blocks/popup-overlay.scss";
+
+@import "animation.scss";

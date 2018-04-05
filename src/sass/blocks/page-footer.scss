@@ -1,0 +1,156 @@
+.page-footer {
+	color: #000;
+	background-color: #fffada;
+}
+
+.page-footer__wrapper {
+	@include container-fluid();
+
+	display: flex;
+	flex-direction: column;
+
+	padding: 0 20px;
+	padding-top: 35px;
+	padding-bottom: 0;
+}
+
+.page-footer__logo-wrapper {
+	display: none;
+	// order: 2;
+
+	// padding-top: 15px;
+	// margin-bottom: 30px;
+
+	// border-top: 1px solid #ccc;	
+}
+
+.page-footer__logo {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 8px;
+	padding: 0;
+
+	background-color: pink;
+	border: 1px solid #ccc;
+}
+
+.page-footer__social {
+	order: 1;
+	margin: 0;
+	padding: 0;
+	padding-top: 15px;
+	padding-bottom: 22px;
+
+	font-size: 22px;
+	text-align: center;
+
+	border-top: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.page-footer__contacts {
+	order: 0;
+	margin-bottom: 35px;
+}
+
+.page-footer__email {
+	order: 2;
+	padding-top: 18px;
+	padding-bottom: 22px;
+
+	font-size: 22px;
+	text-align: center;
+	
+	border-top: 1px solid #ccc;
+}
+
+.page-footer__email a {
+	display: block;
+	margin-top: 7px;
+
+	text-decoration: none;
+	color: #000;
+}
+
+.page-footer__copyright {
+	min-height: 50px;
+	padding: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	text-align: center;
+	color: #000;
+	background-color: #e8dcd0;
+
+	box-sizing: border-box;
+}
+
+@media ($desktop-widths) {
+	.page-footer__wrapper {
+		flex-direction: row;
+		justify-content: space-between;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 60px;		
+		padding-bottom: 30px;		
+	}
+
+	// .page-footer__logo-wrapper {
+	// 	display: flex;
+	// 	order: 0;
+	// 	width: 100px;
+
+	// 	border-top: none;
+	// 	box-sizing: border-box;
+	// }
+
+	// .page-footer__logo {
+	// 	margin: 0;
+	// }
+
+	.page-footer__social {
+		order: 1;
+		width: 325px;
+
+		border-top: none;
+		box-sizing: border-box;
+	}
+
+	.page-footer__contacts {
+		order: 0;
+		width: 220px;
+
+		box-sizing: border-box;
+		flex-direction: column;
+	}
+
+	.page-footer__contacts a {
+		margin-bottom: 12px;
+	}
+
+	.page-footer__contacts .btn {
+		margin: 0 auto;
+	}
+
+	.page-footer__email {
+		order: 2;
+		width: 235px;
+
+		padding-top: 15px;
+		border-top: none;
+	}
+
+	.page-footer__email a {
+		margin-top: 27px;
+
+		font-size: 24px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.page-footer__copyright {
+		font-size: 20px;
+	}
+}

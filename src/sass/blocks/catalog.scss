@@ -1,0 +1,36 @@
+.catalog {
+	color:  #000;
+	background-color: #F6F6F6;
+}
+
+.catalog__wrapper {
+	@include container-fluid();
+
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.catalog__title {
+	margin: 0;
+	margin-bottom: 28px; 
+
+	font-family: "PTSansNarrowBold", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+@media ($tablet-widths) {
+	.catalog__wrapper {
+		padding-top: 110px;
+		padding-bottom: 55px;
+	}
+
+	.catalog__title {
+		margin-bottom: 42px;
+		font-size: 45px;
+		line-height: 55px;
+	}
+}

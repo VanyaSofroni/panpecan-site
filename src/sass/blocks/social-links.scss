@@ -1,0 +1,89 @@
+.social-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.social-links__item {
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 0;
+	margin-top: 20px;
+	margin-right: 15px;
+
+	font-size: 0;
+	
+	border: none;
+	border-radius: 50%;
+	background-color: #35C1BF;
+
+	outline: none; // Глянуть как в bootstrap
+	cursor: pointer;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:hover {
+		background-color: #12A49B;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 8px;
+		left: 9px;
+		width: 33px;
+		height: 33px;
+		
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	&:active::after {
+		opacity: 0.3;
+	}
+}
+
+.social-links__item--vk::after {
+	background-image: url("../img/vk.svg");
+}
+
+.social-links__item--instagram::after {
+	background-image: url("../img/instagram.svg");
+}
+
+.social-links__item--f::after {
+	left: 8px;
+	background-image: url("../img/f.svg");
+}
+
+.social-links__item--ok::after {
+	background-image: url("../img/ok.svg");
+}
+
+@media ($tablet-widths) {
+	.social-links__item {
+		width: 70px;
+		height: 70px;
+
+		&::after {
+			top: 12px;
+			left: 13px;
+			width: 45px;
+			height: 45px;
+		}
+	}
+
+	.social-links__item--f::after {
+		left: 12px;
+	}
+}
+
+@media ($desktop-widths) {
+	.social-links {
+		justify-content: flex-start;
+	}
+}

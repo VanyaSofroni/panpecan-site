@@ -1,0 +1,59 @@
+.block-feedback {
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0;
+	text-align: center;
+}
+
+.block-feedback__tel {
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 20px;
+
+	font-family: "CleanvertisingLight", sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+
+	cursor: pointer;
+}
+
+.block-feedback__tel span {
+	display: block;
+
+	font-size: 14px;
+	color: #ccc;
+}
+
+.block-feedback__btn {
+	width: 170px;
+	margin: 0 auto;
+}
+
+.block-feedback b {
+	display: block;
+	font-family: "PTSansNarrowBold", Arial, sans-serif;
+	font-size: 20px;
+	text-transform: none;
+	color: #ccc;
+}
+
+@media ($desktop-widths) {
+	.block-feedback {
+		display: flex;
+		margin-bottom: 0;
+	}
+
+	.block-feedback__btn {
+		align-self: flex-start;
+		margin-top: 23px;
+		margin-left: 20px;
+	}
+
+	.block-feedback__tel {
+		margin: 0;
+		margin-top: 5px;
+	}
+}

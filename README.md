@@ -10,4 +10,4 @@
 4. ```gulp build```  сборка проекта
 5. ```gulp watch```	 разработка проекта
 
-[panpecan.ru](https://panpecan.ru)
+[panpecan.ru](http://panpecan.ru)
